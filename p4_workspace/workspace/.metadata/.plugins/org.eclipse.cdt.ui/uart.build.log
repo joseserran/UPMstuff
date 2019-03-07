@@ -1,0 +1,6 @@
+18:26:28 **** Incremental Build of configuration Debug for project uart ****
+make -j2 all 
+make: No se hace nada para 'all'.
+
+18:26:29 Build Finished (took 662ms)
+

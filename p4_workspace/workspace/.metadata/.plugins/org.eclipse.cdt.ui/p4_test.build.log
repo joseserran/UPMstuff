@@ -1,0 +1,6 @@
+10:30:58 **** Incremental Build of configuration Debug for project p4_test ****
+make -j2 all 
+make: No se hace nada para 'all'.
+
+10:30:59 Build Finished (took 605ms)
+

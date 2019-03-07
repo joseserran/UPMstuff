@@ -1,0 +1,187 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+
+#include "stm32f4xx.h"
+#include "stm32f411e_discovery.h"
+#include "stm32f4xx_hal.h"
+#include "stm32f411e_discovery_accelerometer.h"
+//#include "lsm303dlhc.h"
+
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+
+SemaphoreHandle_t button_semaphore;
+SemaphoreHandle_t i2c_mutex;
+QueueHandle_t tx_queue;
+
+/**
+  * @brief  This function is executed in case of error occurrence.
+  * @param  file: The file name as string.
+  * @param  line: The line in file as a number.
+  * @retval None
+  */
+void _Error_Handler(char *file, int line)
+{
+  while(1)
+  {
+  }
+}
+
+void StartDefaultTask(void const * argument)
+{
+  /* Infinite loop */
+  for(;;)
+  {
+	HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_15);
+    vTaskDelay(500);
+  }
+  /* USER CODE END 5 */
+}
+
+
+void buttonTask(void const * argument)
+{
+  /* Infinite loop */
+  for(;;) {
+    if (xSemaphoreTake(button_semaphore, portMAX_DELAY) == pdPASS) {
+	  //button_msg.timestamp = xTaskGetTickCount();
+      HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_14);
+	  //xQueueSendToBack(argument->queue, &button_msg, 0);
+	  vTaskDelay(200/portTICK_RATE_MS);
+	  // Clear EXTI interrupt, just in case there was another pending interrupt.
+	  __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_0);
+	  HAL_NVIC_EnableIRQ(EXTI0_IRQn);
+	}
+  }
+}
+
+void accelerationTask(void const * argument)
+	TickType_t prevWakeTime = xTaskGetTickCount();
+    static char buf[100];
+
+    BSP_ACCELERO_Init();
+
+	while(1) {
+		int16_t xyz[3];
+
+		xSemaphoreTake(i2c_mutex, portMAX_DELAY);
+		BSP_ACCELERO_GetXYZ(xyz);
+		xSemaphoreGive(i2c_mutex);
+
+		acc_msg.timestamp = xTaskGetTickCount();
+		acc_msg.value = xyz[0];
+
+		sprintf(buf, "ACC: %d", xyz[0]);
+
+		//xQueueSendToBack(tx_queue, &acc_msg, 0);
+
+		//vTaskDelayUntil(&prevWakeTime, 1000/portTICK_RATE_MS);
+	}
+}
+
+
+
+void SystemClock_Config(void)
+{
+	RCC_ClkInitTypeDef RCC_ClkInitStruct;
+	RCC_OscInitTypeDef RCC_OscInitStruct;
+
+	__HAL_RCC_PWR_CLK_ENABLE();
+	__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+
+	RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+	RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+	RCC_OscInitStruct.PLL.PLLN = 192;
+	RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV4;
+	RCC_OscInitStruct.PLL.PLLM = 4;
+	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+	RCC_OscInitStruct.PLL.PLLQ = 8;
+	HAL_RCC_OscConfig(&RCC_OscInitStruct);
+
+	RCC_ClkInitStruct.ClockType = (RCC_CLOCKTYPE_HCLK |
+								   RCC_CLOCKTYPE_PCLK1 |
+								   RCC_CLOCKTYPE_PCLK2 |
+								   RCC_CLOCKTYPE_SYSCLK);
+	RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+	RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+	RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+
+	HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2);
+}
+
+void config_leds() {
+	__HAL_RCC_GPIOD_CLK_ENABLE();
+	GPIO_InitTypeDef gpio;
+	gpio.Mode = GPIO_MODE_OUTPUT_PP;
+	gpio.Pin = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15;
+	gpio.Pull = GPIO_NOPULL;
+	gpio.Speed = GPIO_SPEED_LOW;
+
+	HAL_GPIO_Init(GPIOD, &gpio);
+}
+
+void config_button() {
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+	GPIO_InitTypeDef gpio;
+
+	gpio.Mode = GPIO_MODE_IT_RISING;
+	gpio.Pin = GPIO_PIN_0;
+	gpio.Pull = GPIO_NOPULL;
+	gpio.Speed = GPIO_SPEED_MEDIUM;
+
+	HAL_GPIO_Init(GPIOA, &gpio);
+
+	HAL_NVIC_EnableIRQ(EXTI0_IRQn);
+	HAL_NVIC_SetPriority(EXTI0_IRQn, configLIBRARY_LOWEST_INTERRUPT_PRIORITY, 0); // min priority
+}
+
+int main(void)
+{
+
+    SystemClock_Config();
+    HAL_Init();
+
+    config_leds();
+    config_button();
+
+    button_semaphore = xSemaphoreCreateBinary();
+    i2c_mutex = xSemaphoreCreateMutex();
+
+    if (xTaskCreate(StartDefaultTask, "T1", 128, NULL, 1, NULL) != pdPASS) {
+	  _Error_Handler(__FILE__, __LINE__);
+    }
+
+    if (xTaskCreate(buttonTask, "buttonTask", 128, NULL, 2, NULL) != pdPASS) {
+      _Error_Handler(__FILE__, __LINE__);
+    }
+
+    if (xTaskCreate(accelerationTask, "accelerationTask", 1000, param_pointer, 5, NULL) != pdPASS) {
+      _Error_Handler(__FILE__, __LINE__);
+    }
+
+
+	vTaskStartScheduler();
+
+	return 0;
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t pin) {
+	// Disable interrupts to prevent button bounces from giving another semaphore
+	HAL_NVIC_DisableIRQ(EXTI0_IRQn);
+	xSemaphoreGiveFromISR(button_semaphore, NULL);
+}
+
