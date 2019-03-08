@@ -77,7 +77,7 @@ HAL_UART_MspInit(USART2);//ESTO?
   */
 void HAL_MspDeInit(void)
 {
-
+HAL_UART_MspDeInit(USART2);
 }
 
 /**
