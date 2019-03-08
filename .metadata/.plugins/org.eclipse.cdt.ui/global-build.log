@@ -1,36 +1,21 @@
-20:41:20 **** Clean-only build of configuration Debug for project p4 ****
-make -j4 clean 
-make: *** No rule to make target 'clean'.  Stop.
-20:41:33 **** Build of configuration Debug for project p4 ****
+21:34:36 **** Incremental Build of configuration Debug for project p4 ****
 make -j4 all 
 Building file: ../src/main.c
-Building file: ../startup/startup_stm32.s
-Building file: ../src/stm32f4xx_it.c
-Building file: ../src/syscalls.c
+Invoking: MCU GCC Compiler
+Building file: ../HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+Building file: ../HAL_Driver/Src/stm32f4xx_hal_can.c
+Building file: ../HAL_Driver/Src/stm32f4xx_hal_cec.c
+C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
 Invoking: MCU GCC Compiler
 Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Assembler
-C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
-C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
-C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
-C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32f4xx_it.d" -MT"src/stm32f4xx_it.o" -o "src/stm32f4xx_it.o" "../src/stm32f4xx_it.c"
-arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
-Finished building: ../startup/startup_stm32.s
- 
-Building file: ../src/system_stm32f4xx.c
 Invoking: MCU GCC Compiler
 C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
-Finished building: ../src/syscalls.c
- 
-Building file: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c
-Invoking: MCU GCC Compiler
 C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.o" -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.o" "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"HAL_Driver/Src/stm32f4xx_hal_can.d" -MT"HAL_Driver/Src/stm32f4xx_hal_can.o" -o "HAL_Driver/Src/stm32f4xx_hal_can.o" "../HAL_Driver/Src/stm32f4xx_hal_can.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" -o "HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" "../HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"HAL_Driver/Src/stm32f4xx_hal_cec.d" -MT"HAL_Driver/Src/stm32f4xx_hal_cec.o" -o "HAL_Driver/Src/stm32f4xx_hal_cec.o" "../HAL_Driver/Src/stm32f4xx_hal_cec.c"
 ../src/main.c: In function 'uart_config':
 ../src/main.c:77:3: error: 'UartHandle' undeclared (first use in this function); did you mean 'xTaskHandle'?
    UartHandle.Instance          = USART2;
@@ -42,22 +27,12 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DS
     ^~~~~~~~~~~~~~~
     _Error_Handler
 ../src/main.c: In function 'uart_tx':
-../src/main.c:100:3: warning: statement with no effect [-Wunused-value]
-   msg_t msg;
-   ^~~~~
-../src/main.c:100:9: error: expected ';' before 'msg'
-   msg_t msg;
-         ^~~
-In file included from ../src/main.c:21:0:
-../src/main.c:107:29: error: 'msg' undeclared (first use in this function); did you mean 'msg_t'?
-     xQueueReceive(txQueue, &msg, portMAX_DELAY);
-                             ^
-C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:914:93: note: in definition of macro 'xQueueReceive'
- #define xQueueReceive( xQueue, pvBuffer, xTicksToWait ) xQueueGenericReceive( ( xQueue ), ( pvBuffer ), ( xTicksToWait ), pdFALSE )
-                                                                                             ^~~~~~~~
 ../src/main.c:108:9: error: 'sensitivity' undeclared (first use in this function)
      if (sensitivity) {
          ^~~~~~~~~~~
+../src/main.c:111:31: warning: too many arguments for format [-Wformat-extra-args]
+       sprintf(buf[buf_index], "\n", msg.type, msg.subtype, msg.timestamp, msg.val);
+                               ^~~~
 ../src/main.c:113:11: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
      len = strlen(buf);
            ^~~~~~
@@ -68,17 +43,17 @@ C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace
                   ^~~
 ../src/main.c:113:18: note: expected 'const char *' but argument is of type 'char (*)[256]'
 ../src/main.c:116:31: error: 'UartHandle' undeclared (first use in this function); did you mean 'xTaskHandle'?
-         if(HAL_UART_Transmit(&UartHandle, buf, len, 500)!= HAL_OK) {
+         if(HAL_UART_Transmit(&UartHandle, buf[buf_index], len, 500)!= HAL_OK) {
                                ^~~~~~~~~~
                                xTaskHandle
-../src/main.c:116:43: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-         if(HAL_UART_Transmit(&UartHandle, buf, len, 500)!= HAL_OK) {
+../src/main.c:116:43: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+         if(HAL_UART_Transmit(&UartHandle, buf[buf_index], len, 500)!= HAL_OK) {
                                            ^~~
 In file included from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
                  from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
                  from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
                  from ../src/main.c:12:
-C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:645:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char (*)[256]'
+C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:645:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
  HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
                    ^~~~~~~~~~~~~~~~~
 ../src/main.c:129:46: warning: passing argument 2 of 'HAL_UART_Transmit_IT' from incompatible pointer type [-Wincompatible-pointer-types]
@@ -102,52 +77,13 @@ C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace
  HAL_StatusTypeDef HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
                    ^~~~~~~~~~~~~~~~~~~~~
 ../src/main.c: In function 'button':
-../src/main.c:197:3: warning: statement with no effect [-Wunused-value]
-   msg_t button_msg;
-   ^~~~~
-../src/main.c:197:9: error: expected ';' before 'button_msg'
+../src/main.c:197:9: warning: variable 'button_msg' set but not used [-Wunused-but-set-variable]
    msg_t button_msg;
          ^~~~~~~~~~
-../src/main.c:199:3: error: 'msg' undeclared (first use in this function); did you mean 'msg_t'?
-   msg.type = 'B';
-   ^~~
-   msg_t
 ../src/main.c:195:14: warning: unused variable 'period' [-Wunused-variable]
    static int period[MAX_PERIOD] = {1000/portTICK_RATE_MS, 800/portTICK_RATE_MS, 700/portTICK_RATE_MS, 600/portTICK_RATE_MS, 500/portTICK_RATE_MS, 400/portTICK_RATE_MS, 300/portTICK_RATE_MS, 200/portTICK_RATE_MS};
               ^~~~~~
-../src/main.c: In function 'accelerometer':
-../src/main.c:238:3: warning: statement with no effect [-Wunused-value]
-   msg_t msg;
-   ^~~~~
-../src/main.c:238:9: error: expected ';' before 'msg'
-   msg_t msg;
-         ^~~
-../src/main.c:244:3: error: 'msg' undeclared (first use in this function); did you mean 'msg_t'?
-   msg.type = 'A';
-   ^~~
-   msg_t
-../src/main.c: In function 'gyroscope':
-../src/main.c:276:3: warning: statement with no effect [-Wunused-value]
-   msg_t msg;
-   ^~~~~
-../src/main.c:276:9: error: expected ';' before 'msg'
-   msg_t msg;
-         ^~~
-../src/main.c:282:3: error: 'msg' undeclared (first use in this function); did you mean 'msg_t'?
-   msg.type = 'G';
-   ^~~
-   msg_t
 ../src/main.c: In function 'compass':
-../src/main.c:313:3: warning: statement with no effect [-Wunused-value]
-   msg_t msg;
-   ^~~~~
-../src/main.c:313:9: error: expected ';' before 'msg'
-   msg_t msg;
-         ^~~
-../src/main.c:319:3: error: 'msg' undeclared (first use in this function); did you mean 'msg_t'?
-   msg.type = 'C';
-   ^~~
-   msg_t
 ../src/main.c:336:43: error: 'compass_period' undeclared (first use in this function); did you mean 'temp_period'?
      vTaskDelayUntil(&prevWakeTime, period[compass_period]);
                                            ^~~~~~~~~~~~~~
@@ -155,17 +91,6 @@ C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace
 ../src/main.c:314:14: warning: variable 'period' set but not used [-Wunused-but-set-variable]
    static int period[MAX_PERIOD] = {5000/portTICK_RATE_MS, 2500/portTICK_RATE_MS, 1000/portTICK_RATE_MS, 500/portTICK_RATE_MS, 200/portTICK_RATE_MS, 100/portTICK_RATE_MS, 50/portTICK_RATE_MS, 20/portTICK_RATE_MS};
               ^~~~~~
-../src/main.c: In function 'temperature':
-../src/main.c:350:3: warning: statement with no effect [-Wunused-value]
-   msg_t msg;
-   ^~~~~
-../src/main.c:350:9: error: expected ';' before 'msg'
-   msg_t msg;
-         ^~~
-../src/main.c:356:3: error: 'msg' undeclared (first use in this function); did you mean 'msg_t'?
-   msg.type = 'T';
-   ^~~
-   msg_t
 ../src/main.c: In function 'main':
 ../src/main.c:425:21: error: 'buttonTask' undeclared (first use in this function); did you mean 'button'?
      if (xTaskCreate(buttonTask, "button", 1024, NULL, 2, NULL) != pdPASS) {
@@ -188,13 +113,13 @@ C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace
 src/subdir.mk:27: recipe for target 'src/main.o' failed
 make: *** [src/main.o] Error 1
 make: *** Waiting for unfinished jobs....
-Finished building: ../src/system_stm32f4xx.c
-Finished building: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c
+Finished building: ../HAL_Driver/Src/stm32f4xx_hal_can.c
+Finished building: ../HAL_Driver/Src/stm32f4xx_hal_cec.c
  
  
-Finished building: ../src/stm32f4xx_it.c
+Finished building: ../HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
  
-20:42:27 **** Clean-only build of configuration Debug for project p4 ****
+21:35:09 **** Clean-only build of configuration Debug for project p4 ****
 make -j4 clean 
 rm -rf *
  

@@ -113,7 +113,7 @@ void uart_tx(void* param)
     len = strlen(buf);
     switch(uart_mode) {
       case M_UART_POLL:
-        if(HAL_UART_Transmit(&UartHandle, buf, len, 500)!= HAL_OK) {
+        if(HAL_UART_Transmit(&UartHandle, buf[buf_index], len, 500)!= HAL_OK) {
         //if(HAL_UART_Transmit(&UartHandle, msg.ptr, msg.len, 500)!= HAL_OK) {
       	  __Error_Handler(__FILE__,__LINE__);
       //    Error_Handler();
@@ -196,10 +196,10 @@ void button(void* param)
 
   msg_t button_msg;
   configButton();
-  msg.type = 'B';
-  msg.subtype = '0';
-  msg.val = 1;
-  msg.sensitivity = 0;
+  button_msg.type = 'B';
+  button_msg.subtype = 0;
+  button_msg.val = 1;
+  button_msg.sensitivity = 0;
 
   while (1) {
     if (xSemaphoreTake(buttonSemaphore, portMAX_DELAY) != pdPASS) {
@@ -250,13 +250,13 @@ void accelerometer(void* param) {
     BSP_ACCELERO_GetXYZ(xyz);
     xSemaphoreGive(i2cMutex);
     msg.subtype = 'X';
-    msg.value = xyz[0];
+    msg.val = xyz[0];
     xQueueSendToBack(txQueue, &msg, 0);
     msg.subtype = 'Y';
-    msg.value = xyz[1];
+    msg.val = xyz[1];
     xQueueSendToBack(txQueue, &msg, 0);
     msg.subtype = 'Z';
-    msg.value = xyz[2];
+    msg.val = xyz[2];
     xQueueSendToBack(txQueue, &msg, 0);
 
     vTaskDelayUntil(&prevWakeTime, period[acc_period]);
@@ -287,13 +287,13 @@ void gyroscope(void* param) {
     //Read XYZ. Check l3gd20.c, which is the device used in stm32f411_discovery_giroscope.c
     //xSemaphoreGive(i2cMutex);
     msg.subtype = 'X';
-    msg.value = xyz[0];
+    msg.val = xyz[0];
     xQueueSendToBack(txQueue, &msg, 0);
     msg.subtype = 'Y';
-    msg.value = xyz[1];
+    msg.val = xyz[1];
     xQueueSendToBack(txQueue, &msg, 0);
     msg.subtype = 'Z';
-    msg.value = xyz[2];
+    msg.val = xyz[2];
     xQueueSendToBack(txQueue, &msg, 0);
 
     vTaskDelayUntil(&prevWakeTime, period[gyro_period]);
@@ -324,13 +324,13 @@ void compass(void* param) {
     //BSP_ACCELERO_GetXYZ(xyz);
     xSemaphoreGive(i2cMutex);
     msg.subtype = 'X';
-    msg.value = xyz[0];
+    msg.val = xyz[0];
     xQueueSendToBack(txQueue, &msg, 0);
     msg.subtype = 'Y';
-    msg.value = xyz[1];
+    msg.val = xyz[1];
     xQueueSendToBack(txQueue, &msg, 0);
     msg.subtype = 'Z';
-    msg.value = xyz[2];
+    msg.val = xyz[2];
     xQueueSendToBack(txQueue, &msg, 0);
 
     vTaskDelayUntil(&prevWakeTime, period[compass_period]);
@@ -361,7 +361,7 @@ void temperature(void* param) {
     msg.timestamp = xTaskGetTickCount();
     //BSP_ACCELERO_GetXYZ(xyz);
     xSemaphoreGive(i2cMutex);
-    msg.value = temp;
+    msg.val = temp;
     xQueueSendToBack(txQueue, &msg, 0);
 
     vTaskDelayUntil(&prevWakeTime, period[temp_period]);
