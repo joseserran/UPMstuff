@@ -87,7 +87,8 @@ void uart_config()
   //GPIO configured in MSP Callback
   if(HAL_UART_Init(&UartHandle) != HAL_OK)
   { 
-    Error_Handler();
+	  __Error_Handler(__FILE__,__LINE__);
+//    Error_Handler();
   }
 }
 
@@ -114,29 +115,34 @@ void uart_tx(void* param)
       case M_UART_POLL:
         if(HAL_UART_Transmit(&UartHandle, buf, len, 500)!= HAL_OK) {
         //if(HAL_UART_Transmit(&UartHandle, msg.ptr, msg.len, 500)!= HAL_OK) {
-          Error_Handler();
+      	  __Error_Handler(__FILE__,__LINE__);
+      //    Error_Handler();
           break;
         }
         break;
       case M_UART_IT:
         if (xSemaphoreTake(txSemaphoreDone, portMAX_DELAY) != pdPASS) {
-          Error_Handler();
+      	  __Error_Handler(__FILE__,__LINE__);
+      //    Error_Handler();
           break;
         }
         if(HAL_UART_Transmit_IT(&UartHandle, buf, len)!= HAL_OK) {
         //if(HAL_UART_Transmit_IT(&UartHandle, msg.ptr, msg.len)!= HAL_OK) {
-          Error_Handler();
+      	  __Error_Handler(__FILE__,__LINE__);
+      //    Error_Handler();
           break;
         }
         break;
       case M_UART_DMA:
         if (xSemaphoreTake(txSemaphoreDone, portMAX_DELAY) != pdPASS) {
-          Error_Handler();
+      	  __Error_Handler(__FILE__,__LINE__);
+      //    Error_Handler();
           break;
         }
         if(HAL_UART_Transmit_DMA(&UartHandle, buf, len)!= HAL_OK) {
         //if(HAL_UART_Transmit_DMA(&UartHandle, msg.ptr, msg.len)!= HAL_OK) {
-          Error_Handler();
+      	  __Error_Handler(__FILE__,__LINE__);
+      //    Error_Handler();
           break;
         }
         break;
@@ -188,7 +194,7 @@ void button(void* param)
 {
   static int period[MAX_PERIOD] = {1000/portTICK_RATE_MS, 800/portTICK_RATE_MS, 700/portTICK_RATE_MS, 600/portTICK_RATE_MS, 500/portTICK_RATE_MS, 400/portTICK_RATE_MS, 300/portTICK_RATE_MS, 200/portTICK_RATE_MS};
 
-  mgs_t button_msg;
+  msg_t button_msg;
   configButton();
   msg.type = 'B';
   msg.subtype = '0';
@@ -197,7 +203,8 @@ void button(void* param)
 
   while (1) {
     if (xSemaphoreTake(buttonSemaphore, portMAX_DELAY) != pdPASS) {
-      Error_Handler();
+  	  __Error_Handler(__FILE__,__LINE__);
+  //    Error_Handler();
       break;
     }
 
