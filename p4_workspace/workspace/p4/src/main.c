@@ -30,7 +30,7 @@ enum {
   M_UART_MODES
 };
 
-struct {
+typedef struct {
   uint32_t timestamp;
   int16_t val;
   uint8_t type;
