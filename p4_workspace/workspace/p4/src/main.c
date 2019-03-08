@@ -62,7 +62,7 @@ volatile int button_period = 0;
 void _Error_Handler(char *file, int line)
 {
   while(1)
-  {// aqui que
+  {
   }
 }
 
