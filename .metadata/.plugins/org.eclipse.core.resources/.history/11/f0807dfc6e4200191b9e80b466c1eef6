@@ -100,7 +100,7 @@ void uart_tx(void* param)
   msg_t msg;
   uint8_t len;
 
-  uart_config(USART2);
+  uart_config();
 
   while(1) {
     // Get element from the queue and send it!

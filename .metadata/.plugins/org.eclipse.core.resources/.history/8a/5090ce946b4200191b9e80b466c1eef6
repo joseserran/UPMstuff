@@ -38,6 +38,17 @@ typedef struct {
   float sensitivity;
 } msg_t;
 
+typedef struct{
+	uint32_t Instance;
+	uint32_t InitBaudRate;
+	uint32_t InitWordLength;
+	uint32_t InitStopBits;
+	uint32_t InitParity;
+	uint32_t InitHwFlowCtl;
+	uint32_t InitMode;
+	uint32_t InitOverSampling;
+} UartHandle;
+
 QueueHandle_t txQueue;
 QueueHandle_t rxQueue;
 
@@ -71,21 +82,21 @@ void _Error_Handler(char *file, int line)
  * UART TX task and auxiliary functions and callbacks
  * 
  ****************************/
-void uart_config(UART_HandleTypeDef* uartHandle)
+void uart_config()
 {
   //UART Configuration
-  uartHandle->Instance           = USART2;
+  UartHandle Instance          = USART2;
 
-  uartHandle->Init.BaudRate      = 115200;
-  uartHandle->Init.WordLength    = UART_WORDLENGTH_8B;
-  uartHandle->Init.StopBits      = UART_STOPBITS_1;
-  uartHandle->Init.Parity        = UART_PARITY_NONE;
-  uartHandle->Init.HwFlowCtl     = UART_HWCONTROL_NONE;
-  uartHandle->Init.Mode          = UART_MODE_TX_RX;
-  uartHandle->Init.OverSampling  = UART_OVERSAMPLING_16;
+  UartHandle InitBaudRate     = 115200;
+  UartHandle InitWordLength   = UART_WORDLENGTH_8B;
+  UartHandle InitStopBits     = UART_STOPBITS_1;
+  UartHandle InitParity       = UART_PARITY_NONE;
+  UartHandle InitHwFlowCtl    = UART_HWCONTROL_NONE;
+  UartHandle InitMode         = UART_MODE_TX_RX;
+  UartHandle InitOverSampling = UART_OVERSAMPLING_16;
 
   //GPIO configured in MSP Callback
-  if(HAL_UART_Init(&uartHandle) != HAL_OK)
+  if(HAL_UART_Init(&UartHandle) != HAL_OK)
   { 
 	  __Error_Handler(__FILE__,__LINE__);
 //    Error_Handler();
@@ -100,7 +111,7 @@ void uart_tx(void* param)
   msg_t msg;
   uint8_t len;
 
-  uart_config(USART2);
+  uart_config();
 
   while(1) {
     // Get element from the queue and send it!

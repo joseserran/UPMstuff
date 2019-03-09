@@ -74,18 +74,18 @@ void _Error_Handler(char *file, int line)
 void uart_config(UART_HandleTypeDef* uartHandle)
 {
   //UART Configuration
-  uartHandle->Instance           = USART2;
+  uartHandle.Instance          >> USART2;
 
-  uartHandle->Init.BaudRate      = 115200;
-  uartHandle->Init.WordLength    = UART_WORDLENGTH_8B;
-  uartHandle->Init.StopBits      = UART_STOPBITS_1;
-  uartHandle->Init.Parity        = UART_PARITY_NONE;
-  uartHandle->Init.HwFlowCtl     = UART_HWCONTROL_NONE;
-  uartHandle->Init.Mode          = UART_MODE_TX_RX;
-  uartHandle->Init.OverSampling  = UART_OVERSAMPLING_16;
+  uartHandle.Init.BaudRate     -> 115200;
+  uartHandle.Init.WordLength   ->UART_WORDLENGTH_8B;
+  uartHandle.Init.StopBits     ->UART_STOPBITS_1;
+  uartHandle.Init.Parity       ->UART_PARITY_NONE;
+  uartHandle.Init.HwFlowCtl    ->UART_HWCONTROL_NONE;
+  uartHandle.Init.Mode         ->UART_MODE_TX_RX;
+  uartHandle.Init.OverSampling ->UART_OVERSAMPLING_16;
 
   //GPIO configured in MSP Callback
-  if(HAL_UART_Init(&uartHandle) != HAL_OK)
+  if(HAL_UART_Init(&UartHandle) != HAL_OK)
   { 
 	  __Error_Handler(__FILE__,__LINE__);
 //    Error_Handler();
@@ -100,7 +100,7 @@ void uart_tx(void* param)
   msg_t msg;
   uint8_t len;
 
-  uart_config(USART2);
+  uart_config();
 
   while(1) {
     // Get element from the queue and send it!

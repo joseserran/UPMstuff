@@ -85,7 +85,7 @@ void uart_config(UART_HandleTypeDef* uartHandle)
   uartHandle->Init.OverSampling  = UART_OVERSAMPLING_16;
 
   //GPIO configured in MSP Callback
-  if(HAL_UART_Init(&uartHandle) != HAL_OK)
+  if(HAL_UART_Init(&UartHandle) != HAL_OK)
   { 
 	  __Error_Handler(__FILE__,__LINE__);
 //    Error_Handler();
@@ -100,7 +100,7 @@ void uart_tx(void* param)
   msg_t msg;
   uint8_t len;
 
-  uart_config(USART2);
+  uart_config();
 
   while(1) {
     // Get element from the queue and send it!

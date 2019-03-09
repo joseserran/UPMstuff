@@ -1,7 +1,7 @@
-13:49:50 **** Clean-only build of configuration Debug for project p4 ****
+14:29:37 **** Clean-only build of configuration Debug for project p4 ****
 make -j4 clean 
 rm -rf *
  
 
-13:49:51 Build Finished (took 553ms)
+14:29:38 Build Finished (took 654ms)
 
