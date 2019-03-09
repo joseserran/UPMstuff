@@ -113,7 +113,7 @@ void uart_tx(void* param)
     len = strlen(buf);
     switch(uart_mode) {
       case M_UART_POLL:
-        if(HAL_UART_Transmit(&UartHandle, buf[buf_index], len, 500)!= HAL_OK) {
+        if(HAL_UART_Transmit(&uartHandle, buf[buf_index], len, 500)!= HAL_OK) {
         //if(HAL_UART_Transmit(&UartHandle, msg.ptr, msg.len, 500)!= HAL_OK) {
       	  __Error_Handler(__FILE__,__LINE__);
       //    Error_Handler();
@@ -126,7 +126,7 @@ void uart_tx(void* param)
       //    Error_Handler();
           break;
         }
-        if(HAL_UART_Transmit_IT(&UartHandle, buf, len)!= HAL_OK) {
+        if(HAL_UART_Transmit_IT(&uartHandle, buf[buf_index], len)!= HAL_OK) {
         //if(HAL_UART_Transmit_IT(&UartHandle, msg.ptr, msg.len)!= HAL_OK) {
       	  __Error_Handler(__FILE__,__LINE__);
       //    Error_Handler();
@@ -139,7 +139,7 @@ void uart_tx(void* param)
       //    Error_Handler();
           break;
         }
-        if(HAL_UART_Transmit_DMA(&UartHandle, buf, len)!= HAL_OK) {
+        if(HAL_UART_Transmit_DMA(&uartHandle, buf[buf_index], len)!= HAL_OK) {
         //if(HAL_UART_Transmit_DMA(&UartHandle, msg.ptr, msg.len)!= HAL_OK) {
       	  __Error_Handler(__FILE__,__LINE__);
       //    Error_Handler();
