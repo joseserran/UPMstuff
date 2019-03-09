@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="uart" key="selection"/>
+		<item value="USART2" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="USART2"/>
+			<item value="WordLength"/>
+			<item value="BaudRate"/>
+			<item value="Instance"/>
+			<item value="UartHandle"/>
 			<item value="uart"/>
 			<item value="HAL_UART_MspIn"/>
 			<item value="HAL_UART_MspInit"/>
-			<item value="hal_uart_"/>
-			<item value="msg_t"/>
-			<item value="msg"/>
-			<item value="HAL_UART_Transmit"/>
-			<item value="hal_uart_tra"/>
 		</list>
 		<list key="replacehistory">
 		</list>

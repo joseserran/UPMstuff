@@ -1,121 +1,207 @@
-13:16:53 **** Incremental Build of configuration Debug for project p4 ****
+13:38:31 **** Incremental Build of configuration Debug for project p4 ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-Building file: ../src/stm32f4xx_it.c
-Building file: ../src/system_stm32f4xx.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
+Building file: ../HAL_Driver/Src/stm32f4xx_hal_dcmi.c
+Building file: ../HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c
+Building file: ../HAL_Driver/Src/stm32f4xx_hal_dfsdm.c
 C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Building file: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c
-C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
 Invoking: MCU GCC Compiler
 C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32f4xx_it.d" -MT"src/stm32f4xx_it.o" -o "src/stm32f4xx_it.o" "../src/stm32f4xx_it.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"HAL_Driver/Src/stm32f4xx_hal_dcmi.d" -MT"HAL_Driver/Src/stm32f4xx_hal_dcmi.o" -o "HAL_Driver/Src/stm32f4xx_hal_dcmi.o" "../HAL_Driver/Src/stm32f4xx_hal_dcmi.c"
 C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.o" -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.o" "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.d" -MT"HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.o" -o "HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.o" "../HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c"
+C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"HAL_Driver/Src/stm32f4xx_hal_dfsdm.d" -MT"HAL_Driver/Src/stm32f4xx_hal_dfsdm.o" -o "HAL_Driver/Src/stm32f4xx_hal_dfsdm.o" "../HAL_Driver/Src/stm32f4xx_hal_dfsdm.c"
+In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:171:0,
+                 from ../src/main.c:12:
 ../src/main.c: In function 'uart_config':
-../src/main.c:77:3: error: 'UartHandle' undeclared (first use in this function); did you mean 'xTaskHandle'?
-   UartHandle.Instance          = USART2;
-   ^~~~~~~~~~
-   xTaskHandle
-../src/main.c:77:3: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:90:4: warning: implicit declaration of function '__Error_Handler'; did you mean '_Error_Handler'? [-Wimplicit-function-declaration]
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f411xe.h:778:29: error: invalid initializer
+ #define USART2              ((USART_TypeDef *) USART2_BASE)
+                             ^
+../src/main.c:88:34: note: in expansion of macro 'USART2'
+   UartHandle Instance          = USART2;
+                                  ^~~~~~
+../src/main.c:90:33: error: invalid initializer
+   UartHandle InitBaudRate     = 115200;
+                                 ^~~~~~
+In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
+                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
+                 from ../src/main.c:12:
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:218:45: error: invalid initializer
+ #define UART_WORDLENGTH_8B                  0x00000000U
+                                             ^
+../src/main.c:91:33: note: in expansion of macro 'UART_WORDLENGTH_8B'
+   UartHandle InitWordLength   = UART_WORDLENGTH_8B;
+                                 ^~~~~~~~~~~~~~~~~~
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:227:45: error: invalid initializer
+ #define UART_STOPBITS_1                     0x00000000U
+                                             ^
+../src/main.c:92:33: note: in expansion of macro 'UART_STOPBITS_1'
+   UartHandle InitStopBits     = UART_STOPBITS_1;
+                                 ^~~~~~~~~~~~~~~
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:236:45: error: invalid initializer
+ #define UART_PARITY_NONE                    0x00000000U
+                                             ^
+../src/main.c:93:33: note: in expansion of macro 'UART_PARITY_NONE'
+   UartHandle InitParity       = UART_PARITY_NONE;
+                                 ^~~~~~~~~~~~~~~~
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:246:46: error: invalid initializer
+ #define UART_HWCONTROL_NONE                  0x00000000U
+                                              ^
+../src/main.c:94:33: note: in expansion of macro 'UART_HWCONTROL_NONE'
+   UartHandle InitHwFlowCtl    = UART_HWCONTROL_NONE;
+                                 ^~~~~~~~~~~~~~~~~~~
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:259:45: error: invalid initializer
+ #define UART_MODE_TX_RX                     ((uint32_t)(USART_CR1_TE |USART_CR1_RE))
+                                             ^
+../src/main.c:95:33: note: in expansion of macro 'UART_MODE_TX_RX'
+   UartHandle InitMode         = UART_MODE_TX_RX;
+                                 ^~~~~~~~~~~~~~~
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:276:49: error: invalid initializer
+ #define UART_OVERSAMPLING_16                    0x00000000U
+                                                 ^
+../src/main.c:96:33: note: in expansion of macro 'UART_OVERSAMPLING_16'
+   UartHandle InitOverSampling = UART_OVERSAMPLING_16;
+                                 ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:99:21: error: expected expression before 'UartHandle'
+   if(HAL_UART_Init(&UartHandle) != HAL_OK)
+                     ^~~~~~~~~~
+../src/main.c:101:4: warning: implicit declaration of function '__Error_Handler'; did you mean '_Error_Handler'? [-Wimplicit-function-declaration]
     __Error_Handler(__FILE__,__LINE__);
     ^~~~~~~~~~~~~~~
     _Error_Handler
+../src/main.c:96:14: warning: unused variable 'InitOverSampling' [-Wunused-variable]
+   UartHandle InitOverSampling = UART_OVERSAMPLING_16;
+              ^~~~~~~~~~~~~~~~
+../src/main.c:95:14: warning: unused variable 'InitMode' [-Wunused-variable]
+   UartHandle InitMode         = UART_MODE_TX_RX;
+              ^~~~~~~~
+../src/main.c:94:14: warning: unused variable 'InitHwFlowCtl' [-Wunused-variable]
+   UartHandle InitHwFlowCtl    = UART_HWCONTROL_NONE;
+              ^~~~~~~~~~~~~
+../src/main.c:93:14: warning: unused variable 'InitParity' [-Wunused-variable]
+   UartHandle InitParity       = UART_PARITY_NONE;
+              ^~~~~~~~~~
+../src/main.c:92:14: warning: unused variable 'InitStopBits' [-Wunused-variable]
+   UartHandle InitStopBits     = UART_STOPBITS_1;
+              ^~~~~~~~~~~~
+../src/main.c:91:14: warning: unused variable 'InitWordLength' [-Wunused-variable]
+   UartHandle InitWordLength   = UART_WORDLENGTH_8B;
+              ^~~~~~~~~~~~~~
+../src/main.c:90:14: warning: unused variable 'InitBaudRate' [-Wunused-variable]
+   UartHandle InitBaudRate     = 115200;
+              ^~~~~~~~~~~~
+../src/main.c:88:14: warning: unused variable 'Instance' [-Wunused-variable]
+   UartHandle Instance          = USART2;
+              ^~~~~~~~
 ../src/main.c: In function 'uart_tx':
-../src/main.c:108:9: error: 'sensitivity' undeclared (first use in this function)
+../src/main.c:119:9: error: 'sensitivity' undeclared (first use in this function)
      if (sensitivity) {
          ^~~~~~~~~~~
-../src/main.c:111:31: warning: too many arguments for format [-Wformat-extra-args]
+../src/main.c:119:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:122:31: warning: too many arguments for format [-Wformat-extra-args]
        sprintf(buf[buf_index], "\n", msg.type, msg.subtype, msg.timestamp, msg.val);
                                ^~~~
-../src/main.c:113:11: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+../src/main.c:124:11: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
      len = strlen(buf);
            ^~~~~~
-../src/main.c:113:11: warning: incompatible implicit declaration of built-in function 'strlen'
-../src/main.c:113:11: note: include '<string.h>' or provide a declaration of 'strlen'
-../src/main.c:113:18: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+../src/main.c:124:11: warning: incompatible implicit declaration of built-in function 'strlen'
+../src/main.c:124:11: note: include '<string.h>' or provide a declaration of 'strlen'
+../src/main.c:124:18: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
      len = strlen(buf);
                   ^~~
-../src/main.c:113:18: note: expected 'const char *' but argument is of type 'char (*)[256]'
-../src/main.c:116:31: error: 'UartHandle' undeclared (first use in this function); did you mean 'xTaskHandle'?
+../src/main.c:124:18: note: expected 'const char *' but argument is of type 'char (*)[256]'
+../src/main.c:127:31: error: expected expression before 'UartHandle'
          if(HAL_UART_Transmit(&UartHandle, buf[buf_index], len, 500)!= HAL_OK) {
                                ^~~~~~~~~~
-                               xTaskHandle
-../src/main.c:116:43: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+../src/main.c:127:12: error: too few arguments to function 'HAL_UART_Transmit'
          if(HAL_UART_Transmit(&UartHandle, buf[buf_index], len, 500)!= HAL_OK) {
-                                           ^~~
+            ^~~~~~~~~~~~~~~~~
 In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
                  from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
                  from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
                  from ../src/main.c:12:
-C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:645:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:645:19: note: declared here
  HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
                    ^~~~~~~~~~~~~~~~~
-../src/main.c:129:46: warning: passing argument 2 of 'HAL_UART_Transmit_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+../src/main.c:140:34: error: expected expression before 'UartHandle'
          if(HAL_UART_Transmit_IT(&UartHandle, buf, len)!= HAL_OK) {
-                                              ^~~
+                                  ^~~~~~~~~~
+../src/main.c:140:12: error: too few arguments to function 'HAL_UART_Transmit_IT'
+         if(HAL_UART_Transmit_IT(&UartHandle, buf, len)!= HAL_OK) {
+            ^~~~~~~~~~~~~~~~~~~~
 In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
                  from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
                  from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
                  from ../src/main.c:12:
-C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:647:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char (*)[256]'
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:647:19: note: declared here
  HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
                    ^~~~~~~~~~~~~~~~~~~~
-../src/main.c:142:47: warning: passing argument 2 of 'HAL_UART_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+../src/main.c:153:35: error: expected expression before 'UartHandle'
          if(HAL_UART_Transmit_DMA(&UartHandle, buf, len)!= HAL_OK) {
-                                               ^~~
+                                   ^~~~~~~~~~
+../src/main.c:153:12: error: too few arguments to function 'HAL_UART_Transmit_DMA'
+         if(HAL_UART_Transmit_DMA(&UartHandle, buf, len)!= HAL_OK) {
+            ^~~~~~~~~~~~~~~~~~~~~
 In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
                  from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
                  from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
                  from ../src/main.c:12:
-C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:649:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char (*)[256]'
+C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:649:19: note: declared here
  HAL_StatusTypeDef HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
                    ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:112:11: warning: variable 'len' set but not used [-Wunused-but-set-variable]
+   uint8_t len;
+           ^~~
 ../src/main.c: In function 'button':
-../src/main.c:197:9: warning: variable 'button_msg' set but not used [-Wunused-but-set-variable]
+../src/main.c:208:9: warning: variable 'button_msg' set but not used [-Wunused-but-set-variable]
    msg_t button_msg;
          ^~~~~~~~~~
-../src/main.c:195:14: warning: unused variable 'period' [-Wunused-variable]
+../src/main.c:206:14: warning: unused variable 'period' [-Wunused-variable]
    static int period[MAX_PERIOD] = {1000/portTICK_RATE_MS, 800/portTICK_RATE_MS, 700/portTICK_RATE_MS, 600/portTICK_RATE_MS, 500/portTICK_RATE_MS, 400/portTICK_RATE_MS, 300/portTICK_RATE_MS, 200/portTICK_RATE_MS};
               ^~~~~~
 ../src/main.c: In function 'compass':
-../src/main.c:336:43: error: 'compass_period' undeclared (first use in this function); did you mean 'temp_period'?
+../src/main.c:347:43: error: 'compass_period' undeclared (first use in this function); did you mean 'temp_period'?
      vTaskDelayUntil(&prevWakeTime, period[compass_period]);
                                            ^~~~~~~~~~~~~~
                                            temp_period
-../src/main.c:314:14: warning: variable 'period' set but not used [-Wunused-but-set-variable]
+../src/main.c:325:14: warning: variable 'period' set but not used [-Wunused-but-set-variable]
    static int period[MAX_PERIOD] = {5000/portTICK_RATE_MS, 2500/portTICK_RATE_MS, 1000/portTICK_RATE_MS, 500/portTICK_RATE_MS, 200/portTICK_RATE_MS, 100/portTICK_RATE_MS, 50/portTICK_RATE_MS, 20/portTICK_RATE_MS};
               ^~~~~~
 ../src/main.c: In function 'main':
-../src/main.c:425:21: error: 'buttonTask' undeclared (first use in this function); did you mean 'button'?
+../src/main.c:436:21: error: 'buttonTask' undeclared (first use in this function); did you mean 'button'?
      if (xTaskCreate(buttonTask, "button", 1024, NULL, 2, NULL) != pdPASS) {
                      ^~~~~~~~~~
                      button
-../src/main.c:429:21: error: 'accelerationTask' undeclared (first use in this function); did you mean 'accelero_config'?
+../src/main.c:440:21: error: 'accelerationTask' undeclared (first use in this function); did you mean 'accelero_config'?
      if (xTaskCreate(accelerationTask, "accelerometer", 1024, NULL, 5, NULL) != pdPASS) {
                      ^~~~~~~~~~~~~~~~
                      accelero_config
 ../src/main.c: At top level:
-../src/main.c:438:6: error: redefinition of 'HAL_GPIO_EXTI_Callback'
+../src/main.c:449:6: error: redefinition of 'HAL_GPIO_EXTI_Callback'
  void HAL_GPIO_EXTI_Callback(uint16_t pin) {
       ^~~~~~~~~~~~~~~~~~~~~~
-../src/main.c:222:6: note: previous definition of 'HAL_GPIO_EXTI_Callback' was here
+../src/main.c:233:6: note: previous definition of 'HAL_GPIO_EXTI_Callback' was here
  void HAL_GPIO_EXTI_Callback(uint16_t pin) {
       ^~~~~~~~~~~~~~~~~~~~~~
-../src/main.c:195:14: warning: 'period' defined but not used [-Wunused-variable]
+../src/main.c:206:14: warning: 'period' defined but not used [-Wunused-variable]
    static int period[MAX_PERIOD] = {1000/portTICK_RATE_MS, 800/portTICK_RATE_MS, 700/portTICK_RATE_MS, 600/portTICK_RATE_MS, 500/portTICK_RATE_MS, 400/portTICK_RATE_MS, 300/portTICK_RATE_MS, 200/portTICK_RATE_MS};
               ^~~~~~
-Finished building: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c
 src/subdir.mk:27: recipe for target 'src/main.o' failed
 make: *** [src/main.o] Error 1
 make: *** Waiting for unfinished jobs....
+Finished building: ../HAL_Driver/Src/stm32f4xx_hal_dcmi.c
  
-Finished building: ../src/stm32f4xx_it.c
+Finished building: ../HAL_Driver/Src/stm32f4xx_hal_dfsdm.c
  
-Finished building: ../src/system_stm32f4xx.c
+Finished building: ../HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c
+ 
+13:49:50 **** Clean-only build of configuration Debug for project p4 ****
+make -j4 clean 
+rm -rf *
  

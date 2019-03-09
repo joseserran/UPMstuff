@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;p4/HAL_Driver/Src/stm32f4xx_hal_msp_template.c&apos; to &apos;stm32f4xx_hal_msp.c&apos;" description="Rename resource &apos;stm32f4xx_hal_msp_template.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HAL_Driver/Src/stm32f4xx_hal_msp_template.c" name="stm32f4xx_hal_msp.c" stamp="1552134046110" updateReferences="true"/>
+</session>
