@@ -1,4 +1,4 @@
-activeuserprofiles=7f053030h;Team
+activeuserprofiles=PC05;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=startic
-useridperkey=7f053030h.Local\=startic;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=alumno
+useridperkey=PC05.Local\=alumno;
