@@ -1,40 +1,48 @@
-14:34:31 **** Incremental Build of configuration Debug for project p4 ****
+10:25:59 **** Incremental Build of configuration Debug for project p4 ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-Building file: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
-Building file: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-Building file: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+Building file: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c
+Building file: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
+Building file: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
+C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
 Invoking: MCU GCC Compiler
-C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Invoking: MCU GCC Compiler
 Invoking: MCU GCC Compiler
-C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o" "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c"
-C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c"
-C:\Users\joseangelSSD\Documents\UPMstuff\p4_workspace\workspace\p4\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" -o "Middlewares/Third_Party/FreeRTOS/Source/list.o" "../Middlewares/Third_Party/FreeRTOS/Source/list.c"
+C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
+C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
+C:\Users\startic\Dropbox\aaa Mi MUISE 2018-2019\githubUPM\p4_workspace\workspace\p4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o" -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o" "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.o" -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.o" "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411VETx -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/Legacy" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/core" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/STM32F411E-Discovery/" -I"C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/BSP/Components" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o" -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o" "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c"
 ../src/main.c: In function 'uart_config':
 ../src/main.c:88:20: warning: passing argument 1 of 'HAL_UART_Init' from incompatible pointer type [-Wincompatible-pointer-types]
    if(HAL_UART_Init(&uartHandle) != HAL_OK)
                     ^
-In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
-                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
-                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
+In file included from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
+                 from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
                  from ../src/main.c:12:
-C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:630:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'UART_HandleTypeDef ** {aka struct <anonymous> **}'
+C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:630:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'UART_HandleTypeDef ** {aka struct <anonymous> **}'
  HAL_StatusTypeDef HAL_UART_Init(UART_HandleTypeDef *huart);
                    ^~~~~~~~~~~~~
 ../src/main.c:90:4: warning: implicit declaration of function '__Error_Handler'; did you mean '_Error_Handler'? [-Wimplicit-function-declaration]
     __Error_Handler(__FILE__,__LINE__);
     ^~~~~~~~~~~~~~~
     _Error_Handler
+In file included from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:171:0,
+                 from ../src/main.c:12:
 ../src/main.c: In function 'uart_tx':
-../src/main.c:103:15: error: expected expression before 'UART_HandleTypeDef'
-   uart_config(UART_HandleTypeDef* uartHandle);
-               ^~~~~~~~~~~~~~~~~~
+C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device/stm32f411xe.h:778:29: warning: passing argument 1 of 'uart_config' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define USART2              ((USART_TypeDef *) USART2_BASE)
+                             ^
+../src/main.c:103:15: note: in expansion of macro 'USART2'
+   uart_config(USART2);
+               ^~~~~~
+../src/main.c:74:6: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'USART_TypeDef * {aka struct <anonymous> *}'
+ void uart_config(UART_HandleTypeDef* uartHandle)
+      ^~~~~~~~~~~
 ../src/main.c:108:9: error: 'sensitivity' undeclared (first use in this function)
      if (sensitivity) {
          ^~~~~~~~~~~
@@ -58,31 +66,31 @@ C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/In
 ../src/main.c:116:43: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
          if(HAL_UART_Transmit(&uartHandle, buf[buf_index], len, 500)!= HAL_OK) {
                                            ^~~
-In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
-                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
-                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
+In file included from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
+                 from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
                  from ../src/main.c:12:
-C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:645:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:645:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
  HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
                    ^~~~~~~~~~~~~~~~~
 ../src/main.c:129:46: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
          if(HAL_UART_Transmit_IT(&uartHandle, buf[buf_index], len)!= HAL_OK) {
                                               ^~~
-In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
-                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
-                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
+In file included from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
+                 from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
                  from ../src/main.c:12:
-C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:647:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:647:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
  HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
                    ^~~~~~~~~~~~~~~~~~~~
 ../src/main.c:142:47: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_DMA' differ in signedness [-Wpointer-sign]
          if(HAL_UART_Transmit_DMA(&uartHandle, buf[buf_index], len)!= HAL_OK) {
                                                ^~~
-In file included from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
-                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
-                 from C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
+In file included from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_conf.h:304:0,
+                 from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal.h:46,
+                 from C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/CMSIS/device/stm32f4xx.h:250,
                  from ../src/main.c:12:
-C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:649:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+C:/Users/startic/Dropbox/aaa Mi MUISE 2018-2019/githubUPM/p4_workspace/workspace/p4/HAL_Driver/Inc/stm32f4xx_hal_uart.h:649:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
  HAL_StatusTypeDef HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
                    ^~~~~~~~~~~~~~~~~~~~~
 ../src/main.c: In function 'button':
@@ -119,16 +127,12 @@ C:/Users/joseangelSSD/Documents/UPMstuff/p4_workspace/workspace/p4/HAL_Driver/In
 ../src/main.c:195:14: warning: 'period' defined but not used [-Wunused-variable]
    static int period[MAX_PERIOD] = {1000/portTICK_RATE_MS, 800/portTICK_RATE_MS, 700/portTICK_RATE_MS, 600/portTICK_RATE_MS, 500/portTICK_RATE_MS, 400/portTICK_RATE_MS, 300/portTICK_RATE_MS, 200/portTICK_RATE_MS};
               ^~~~~~
-Finished building: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
-Finished building: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+src/subdir.mk:27: recipe for target 'src/main.o' failed
 make: *** [src/main.o] Error 1
 make: *** Waiting for unfinished jobs....
-src/subdir.mk:27: recipe for target 'src/main.o' failed
+Finished building: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
  
+Finished building: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_1.c
  
-Finished building: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
- 
-15:22:54 **** Clean-only build of configuration Debug for project p4 ****
-make -j4 clean 
-rm -rf *
+Finished building: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
  
